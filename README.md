@@ -7,7 +7,7 @@ Towards Optimal Structured CNN Pruning via Generative Adversarial Learning (GAL)
 * [Paper](https://arxiv.org/abs/1903.09291)
 * [Github](https://github.com/ShaohuiLin/GAL) 
 
-FLOP calculation tool- ptflops
+FLOP calculation tool- *ptflops*
 * [Github](https://github.com/sovrasov/flops-counter.pytorch) 
 
 ## Requirements
