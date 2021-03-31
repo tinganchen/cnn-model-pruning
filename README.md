@@ -49,5 +49,5 @@ Model                | Stage               | Number of sructures (blocks)   | To
 ---                  |---                  |---                             |---          
 Resnet-56 (Original) |Pretrained           | 27                             | 93.26  
 Resnet-56 (Sparse)   |Training & Pruning   | 27                             | 91.46       
-Resnet-56 (Pruned)   |Pruned & Fine-tuneing| 16                             | 92.22       
+Resnet-56 (Pruned)   |Pruned & Fine-tuning | 16                             | 92.22       
 
