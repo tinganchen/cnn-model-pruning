@@ -40,5 +40,14 @@ python main.py --job_dir <experiment_results_dir> --teacher_dir <pretrain_weight
 ### Fine-tuning stage
 
 ```shell
-python finetune.py --job_dir <finetuning_results_dir> --teacher_dir <pretrain_weights_dir> --teacher_file <pretrain_weights_file> --refine <experiment_results_dir> --arch resnet --teacher_model resnet_56 --student_model resnet_56_sparse --num_epochs 30 --train_batch_size 128 --eval_batch_size 100 --lr 0.01 --momentum 0.9 --miu 1 --sparse_lambda 0.6 --lr_decay_step 30 --mask_step 200 --weight_decay 0.0002
+python finetune.py --job_dir <finetuning_results_dir> --refine <experiment_results_dir> --num_epochs 30 --lr 0.01
 ```
+
+### Results
+
+Model                | Stage               | Number of sructures (blocks)   | Top-1 accuracy
+---                  |---                  |---                             |---          
+Resnet-56 (Original) |Pretrained           | 27                             | 93.26  
+Resnet-56 (Sparse)   |Training & Pruning   | 27                             | 91.46       
+Resnet-56 (Pruned)   |Pruned & Fine-tuneing| 16                             | 92.22       
+
