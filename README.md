@@ -45,7 +45,7 @@ python finetune.py --job_dir <finetuning_results_dir> --refine <experiment_resul
 
 ### Results
 
-Model                | Stage               | #Sructures (blocks)   | FLOPs (pruned ratio)  | #Parameters (pruned ratio) | Top-1 accuracy
+Model                | Stage               | #Sructures (blocks)   | FLOPs        (pruned ratio)  | #Parameters      (pruned ratio) | Top-1 accuracy
 ---                  |---                  |---                                    |---                    |---                         |---     
 Resnet-56 (Original) |Pretrained           | 27                                    |125.49M (0%)           |0.85M (0%)                  | 93.26  
 Resnet-56 (Sparse)   |Training & Pruning   | 27                                    |125.49M (0%)           |0.85M (0%)                  | 91.72      
