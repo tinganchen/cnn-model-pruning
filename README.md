@@ -45,9 +45,9 @@ python finetune.py --job_dir <finetuning_results_dir> --refine <experiment_resul
 
 ### Results
 
-Model                | Stage               | Number of sructures (blocks)   | FLOPs (Pruned)  | #Parameters (Pruned) | Top-1 accuracy
----                  |---                  |---                             |---              |---                   |---     
-Resnet-56 (Original) |Pretrained           | 27                             |125.49M (0%)     |0.85M (0%)            | 93.26  
-Resnet-56 (Sparse)   |Training & Pruning   | 27                             |125.49M (0%)     |0.85M (0%)            | 91.72      
-Resnet-56 (Pruned)   |Pruned & Fine-tuning | 10                             |79.24M (37.7%)   |0.67M (21.7%)        | 92.22       
+Model                | Stage               | Number of sructures (pruned blocks)   | FLOPs (pruned ratio)  | #Parameters (pruned ratio) | Top-1 accuracy
+---                  |---                  |---                                    |---                    |---                         |---     
+Resnet-56 (Original) |Pretrained           | 27                                    |125.49M (0%)           |0.85M (0%)                  | 93.26  
+Resnet-56 (Sparse)   |Training & Pruning   | 27                                    |125.49M (0%)           |0.85M (0%)                  | 91.72      
+Resnet-56 (Pruned)   |Pruned & Fine-tuning | 10                                    |79.24M (37.7%)         |0.67M (21.7%)               | 92.22       
 
