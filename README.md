@@ -1,5 +1,5 @@
 # CNN pruning - GAL, CVPR 2019
-[Reproduce] Pruning, model compression, adversarial learning, convolutional neural network.
+[Reproduce] Pruning, model compression, generative adversarial network.
 
 ## References
 
